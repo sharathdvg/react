@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./custom.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="nav-md">
+
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="./inventory.html" class="site_title"><i class="fa fa-paw"></i> <span>Van for hiring</span></a>
+          </div>
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Welcome,</span>
+              <h2>John Doe</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+          <br>
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>General</h3>
+
+
+
+              <ul class="nav side-menu">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
+
+              </ul>
+              <ul class="nav side-menu">
+                <li><a href="#"><i class="fa fa-check-circle-o"></i>Booking</a>
+
+              </ul>
+
+              <div class="side-menu">
+                <button class="btn dropdown-toggle" style="color: white;" id="dropdownCenterBtn"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Customers
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                  <li><a class="dropdown-item" href="#">Individual</a></li>
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                </ul>
+              </div>
+
+              <div class="feet-item">
+                <button class="btn dropdown-toggle" style="color: white;" id="dropdownCenterBtn"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Fleet
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                  <li><a class="dropdown-item" href="#">Fleet Dashboard</a></li>
+                  <li><a class="dropdown-item" href="./fleet_inventory.html">Fleet Inventory</a></li>
+                  <li><a class="dropdown-item" href="#">Fleet Transfer</a></li>
+                  <li><a class="dropdown-item" href="#">Vehicle Checklist</a></li>
+                  <li><a class="dropdown-item" href="#">Vehicle Scheduler</a></li>
+                  <li><a class="dropdown-item" href="#">Damages</a></li>
+                  <li><a class="dropdown-item" href="#">Service</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul class="nav side-menu">
+                  <li><a href="#"><i class="fa fa-google-wallet"></i>Fleet movement</a>
+
+                </ul>
+              </div>
+
+              <ul class="nav side-menu">
+                <li><a href="billing.html"><i class="fa fa-list-alt"></i>Billing</a>
+
+              </ul>
+              <ul class="nav side-menu">
+                <li><a href="reports.html"><i class="fa fa-bar-chart "></i>Reports</a>
+
+              </ul>
+              <ul class="nav side-menu">
+                <li><a href="websites.html"><i class="fa fa-globe"></i>Websites</a>
+
+              </ul>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <br>
+      <div></div>
+      <div class="container">
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="h2 title_left">
+              <ul class="breadcrumb" id="breadcrumb">
+                <li><a href="fleet_inventory.html">Feet inventory</a></li>
+                <li><a href="add_vehical.html">Add vehicle</a></li>
+
+                <li style=" display: none;"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <!-- top tiles -->
+
+
+          <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12" style="background-color: white;">
+
+              <div class="clearfix"></div>
+              <div class="x_content">
+                <br />
+                <h2>Search vehicle</h2>
+                <form id="demo-form2" class="form-horizontal form-label-left">
+                  <label for="">Enter vehicle registraion number to search DVLA </label>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="form-group">
+
+                        <input type="text" class="form-control" name="" id="" value="">
+
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="form-group col-sm-12">
+                        <button type="submit" class="btn btn-success">search</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-1 col-sm-1 form-group top_search">
+                <a href="#"> <button class="btn btn-light">Add vehicle</button></a>
+              </div>
+            </div>
+          </div><br>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Specification</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">MOT \ TAX</button>
+              <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled"
+                type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Services</button>
+              <button class="nav-link" id="nav-damages-tab" data-bs-toggle="tab" data-bs-target="#nav-damages"
+                type="button" role="tab" aria-controls="nav-damages" aria-selected="false">Damages</button>
+              <button class="nav-link" id="nav-documents-tab" data-bs-toggle="tab" data-bs-target="#nav-documents"
+                type="button" role="tab" aria-controls="nav-documents" aria-selected="false">Documents</button>
+              <button class="nav-link" id="nav-finance-tab" data-bs-toggle="tab" data-bs-target="#nav-finance"
+                type="button" role="tab" aria-controls="nav-finance" aria-selected="false">Finance</button>
+              <button class="nav-link" id="nav-vehicle-tab" data-bs-toggle="tab" data-bs-target="#nav-vehicle"
+                type="button" role="tab" aria-controls="nav-vehicle" aria-selected="false">vehicle state</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+              tabindex="0">
+              <h3>Vehicle Description :source :<small>manual</small></h3>
+              <h4>Base Details</h2>
+
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Asset tag</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Registration number</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Make</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Model</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Colour</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Year</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Telemetry device ID</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Vin</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Number of doors</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Number of seats</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Transmission type</label><span class="required">*</span>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">PCO number</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                </div><br>
+
+                <h5>Additional Details</h5>
+                <div class="row">
+                  <div class="col-md-8 col-sm-8 col-xs-8">
+                    <label for=""> <span class="required"></span> </label>
+                    <div class="radio">
+                      <label>
+                        <input type="checkbox" checked="" value="" id="" name=""> Premium vehicle
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-4 col-xs-4" style="height: 62px;">
+                    <div class="form-group ">
+                      <label for="imageDiv">Frog Diagram</label>
+                      <select class="form-control" name="imageDiv" id="" value="">
+                        <option>--Select Diagram--</option>
+                        <option>Small Van</option>
+                        <option>Medium Van</option>
+                        <option>Large Van</option>
+                        <select>
+                    </div>
+                  </div><br>
+
+                  <div class="col-md-8 col-sm-8 col-xs-4" style="margin-top: 18px;">
+
+                    <div class="form-group col-md-12">
+                      <div> Miscellaneous Features</div>
+                      <textarea name="comment" class="form-control " rows="4" id="comment"></textarea>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 18px;">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                      <div class="form-group"><br>
+                        <label for="">&nbsp; UPLOAD VEHICLE IMAGE </label>
+                        <input type="file" id="" name="">
+                        <img src="">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+
+
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-top: 143px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                      <div class="form-group col-md-12">
+                        <div> Notes</div>
+                        <textarea name="comment" class="form-control " rows="4" id="comment"></textarea>
+                      </div>
+                    </div><br>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                      <div class="form-group">
+                        <button type="submit" class="btn btn bg-light">Add</button>
+                      </div><br><br>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="dt-buttons btn-group bg-light"><a
+                        class="btn btn-default buttons-copy buttons-html5 btn-sm" tabindex="0"
+                        aria-controls="datatable-buttons" href="#"><span>Copy</span></a><a
+                        class="btn btn-default buttons-csv buttons-html5 btn-sm" tabindex="0"
+                        aria-controls="datatable-buttons" href="#"><span>CSV</span></a><a
+                        class="btn btn-default buttons-print btn-sm" tabindex="0" aria-controls="datatable-buttons"
+                        href="#"><span>Print</span></a></div>
+
+                    <div id="datatable-buttons_filter" class="dataTables_filter">Search:<label><input type="search"
+                          class="form-control input-sm" placeholder="" aria-controls="datatable-buttons"></label>
+                    </div>
+                    <table id="datatable-buttons" class="table table-striped table-bordered" style="width: 100%;">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Note</th>
+                          <th>Date Created</th>
+                        </tr>
+                      </thead>
+
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td></td>
+                          <td></td>
+
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <h5>Vehicle Specification</h5>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Fule type</label><span class="required">*</span>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Engine size</label><span class="required">*</span>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Cap/ACRIS code</label>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Interior color</label>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Body type</label>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Steering</label>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="">Wheel plan</label>
+                    <input type="text" class="form-control" name="" id="" value="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <h2>MOT Details</h2><br>
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>MOT Report</h2>
+
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Test Date</th>
+                            <th>Expirity Date</th>
+                            <th>Result</th>
+                            <th>ODO meter reading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+              tabindex="0">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2>Service History</h2><br>
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Service Report</h2>
+
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Service start date</th>
+                          <th>Service end date</th>
+                          <th>Type</th>
+                          <th>Cost</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                          <td>@mdo</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="nav-damages" role="tabpanel" aria-labelledby="nav-damages-tab" tabindex="0">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <h2>Damage History </h2>
+                    <div class="x_title">
+
+                    </div>
+                    <div class="x_content">
+
+                      <table id="datatable" class="table table-striped table-bordered" style="width: 100%;">
+                        <thead>
+                          <tr>
+                            <th>Reported Date</th>
+                            <th>Incident Date</th>
+                            <th>Referance No</th>
+                            <th>Cost</th>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-documents-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Add vehicle Documents</h2><br>
+                      <div></div>
+                      <div></div>
+                      <div class="col-md-2 col-sm-2 form-group pull-right top_search" style="align-content:end;">
+                        <a class="modal-open edit-charge" href="#" data-toggle="modal"
+                          data-target="#update_multibooking">
+                          <button class="btn btn-warning">Add Document</button><br>
+                          <p>Only a maximum of 5 documents can be updated for a vehicle</p>
+                        </a>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <table id="datatable" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Doucment type</th>
+                            <th>Document name / title</th>
+                            <th>Expiry Date</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-finance" role="tabpanel" aria-labelledby="nav-finance-tab" tabindex="0">
+              <h2>Finance Details</h2>
+
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                    <label for="planType">Source Type</label>
+                    <select class="form-control" name="planType" id="" value="">
+                      <option> Leased </option>
+                      <option>Financed </option>
+                      <option> Rented </option>
+                    </select>
+
+                  </div>
+                </div>
+                <!--Leased-->
+                <div class="leasedDiv" style="display:none;">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Leased From</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Leased Price</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label>Payment Intervel</label>
+                      <select class="form-control" name="" id="" value="">
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Leased From Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker1" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Leased Till Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker2" value="">
+                    </div>
+                  </div>
+
+                </div>
+                <!--Leased End-->
+                <!--Financed-->
+                <div class="financedDiv" style="display:none;">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Financed From</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Financed Price</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Financed Deposite</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label>Payment Intervel</label>
+                      <select class="form-control" name="" id="" value="">
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Financed From Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker3" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Financed Till Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker4" value="">
+                    </div>
+                  </div>
+
+                </div>
+                <!--Financed End-->
+                <!--Rented-->
+                <div class="rentedDiv" style="display:none;">
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Rented From</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Rented Price</label>
+                      <input type="text" class="form-control" name="" id="" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label>Payment Intervel</label>
+                      <select class="form-control" name="" id="" value="">
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                        <option> </option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Rented From Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker5" value="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="">Rented Till Date</label>
+                      <input type="text" class="form-control" name="" id="myDatepicker6" value="">
+                    </div>
+                  </div>
+
+                </div>
+                <!--Rented End-->
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-vehicle" role="tabpanel" aria-labelledby="nav-vehicle-tab" tabindex="0">
+              <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>Last Updated :NA</p>
+
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>Updated By :NA</p>
+                </div>
+
+              </div>
+              <h2> MILEAGE</h2>
+              <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>Fuel Status :NA</p>
+
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>Odo meter reading :NA</p>
+                </div>
+              </div>
+
+              <div class="row row_box MuiPaper-elevation3">
+                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 21px;">
+                  <p>Exterior Damages</p>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 21px;">
+                  <p>Interior Damages</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>General Checks</p>
+                  No available data
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <p>Accessories Checks</p>
+                  No available data
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><br>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
